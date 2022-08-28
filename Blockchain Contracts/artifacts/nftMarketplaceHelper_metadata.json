@@ -1,0 +1,475 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTCollectionToOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTCollections",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "ownerOfNFT",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "NFTType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Category",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTToOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTs",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "ownerOfNFT",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "NFTType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Category",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "_viewCreatedNFTs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "creator",
+								"type": "address"
+							},
+							{
+								"internalType": "address payable",
+								"name": "ownerOfNFT",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "uri",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "NFTType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Category",
+								"type": "string"
+							}
+						],
+						"internalType": "struct NFTitem.NFTitem[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_approved",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getNFTsByOwner",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"isOwner()": {
+					"return": "true if `msg.sender` is the owner of the contract."
+				},
+				"owner()": {
+					"return": "the address of the owner."
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract."
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"nftMarketPlaceHelper.sol": "nftMarketplaceHelper"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"erc721.sol": {
+			"keccak256": "0xbd986dcdafca37cacc999dc70c5469b6c9b199883236fbe231181c8587555641",
+			"urls": [
+				"bzz-raw://8b5cb11488ff3afa996458eab62db9a7c73d06f9d4b899daff081fba1b5bcbf6",
+				"dweb:/ipfs/QmcvEGDDQLwk4HPx4KDygLhgMXveg3mXQBajXo9aiPwbLS"
+			]
+		},
+		"nftMarketPlaceHelper.sol": {
+			"keccak256": "0xe08409eb4eddc5a1c0dce0abafd605cd49c96b6f7b017597f74976a8a9cf8e1a",
+			"urls": [
+				"bzz-raw://ddb9f1890694b15f58d69a73a2bfe5508d4dfb30f0e843ab2fc40783326ede45",
+				"dweb:/ipfs/Qma1aaFWbvSJdvdApcsrL2iXJo8iSmikbdbb9bJv6S9XaL"
+			]
+		},
+		"nftcollection.sol": {
+			"keccak256": "0x011cb3cba82aadb5c6b6607e996b0b059eee626c5bbe75ebe855829f8b9f0e08",
+			"urls": [
+				"bzz-raw://50e3d3d8aa4b963edfb759ff8f35c3885067a78a6b71bd04adf0d082afdb0a4c",
+				"dweb:/ipfs/QmQVY2xdZEJuCgUq497KeiPRP5L3TENAuiszLHck1j3dQG"
+			]
+		},
+		"nftitem.sol": {
+			"keccak256": "0x108822d7764bf5883ae046e8b55e09e17d9bdee448f237bbde539ea1a7b31381",
+			"urls": [
+				"bzz-raw://174cfe1ae2637e5dc5500d7eb158f708a70080e72b59b614bce1caec28c0b0a9",
+				"dweb:/ipfs/Qmcbb1rJg7CBD7wSrUT84ejq31h3rsL2fWBe8R9YDeTPhb"
+			]
+		},
+		"ownable.sol": {
+			"keccak256": "0x33f9862afb90391d02eed330569a92bc9143dd1cb5d6661d737bcedb22f24c68",
+			"urls": [
+				"bzz-raw://e8f11612996616032f44968b1850c1e71a94a368094141a23f229f2c1a260990",
+				"dweb:/ipfs/QmXaxow6LX1FHFKXvMHbKrSn12csP81Fegmbu8HvhUd6MB"
+			]
+		},
+		"safemath.sol": {
+			"keccak256": "0x550edc31dffbfc4cc03a0782be2a00d21fb46c4c7701e7ad94119b2958df3141",
+			"urls": [
+				"bzz-raw://c83e2808dc5f0270c500b3d6778501864e2aa6ea544d945f5261a17ac332c1bb",
+				"dweb:/ipfs/QmaPhmn7YRdF9pvmbGUr2sg9mvWMkxpid4fZDb66hNdvGm"
+			]
+		}
+	},
+	"version": 1
+}

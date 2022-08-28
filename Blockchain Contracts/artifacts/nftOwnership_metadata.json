@@ -1,0 +1,276 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "NFTType",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "collection",
+						"type": "bool"
+					}
+				],
+				"name": "newNFT",
+				"type": "event"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_uri",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_NFTType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_category",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_collection",
+						"type": "bool"
+					}
+				],
+				"name": "_createNFT",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "_transfer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "_viewCreatedNFTs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "creator",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "uri",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "NFTType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Category",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "collection",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct NFT.NFTitem[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"nftOwnership.sol": "nftOwnership"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"erc721.sol": {
+			"keccak256": "0x3e2c90a9f0dc8be12bef701ca0a5a1e2aade127c1fe60de59a1b1743c12a648c",
+			"urls": [
+				"bzz-raw://9d7e77955157699ed8225c47d5ed241e02b4103f4783052e4d85a6c82adadf84",
+				"dweb:/ipfs/QmTXBAVucET2KwwYB8DWy33Tvuis8zKLy5VRaNBHWX4Vxy"
+			]
+		},
+		"nftOwnership.sol": {
+			"keccak256": "0x36ef5b2ecb7f091e5a22578a40c631ce8c3891c8e68045baf6f68d2876ccbff1",
+			"urls": [
+				"bzz-raw://5cf1769bb7861a1cca6aa872e2a4af735fc2b8af3a6b06a642a22e0af561ba15",
+				"dweb:/ipfs/Qmf66KKedDqepE4gFAUTmPLxwiECT77YgsLkE2dxkdGhwj"
+			]
+		},
+		"nftitem.sol": {
+			"keccak256": "0x2720049a840e4c8e8d0e006449f6e7c9bc0ce7da7c189d62a6dfc31dbf2fa9d6",
+			"urls": [
+				"bzz-raw://daa1b7869add53322b2db3438c41435d99e4925e10d43a3accef1031b83dd73e",
+				"dweb:/ipfs/QmPqfx2F8m6TuGmaxWxD9sWLNQLcbbvHayVcrr3YZEf5hb"
+			]
+		},
+		"safemath.sol": {
+			"keccak256": "0x550edc31dffbfc4cc03a0782be2a00d21fb46c4c7701e7ad94119b2958df3141",
+			"urls": [
+				"bzz-raw://c83e2808dc5f0270c500b3d6778501864e2aa6ea544d945f5261a17ac332c1bb",
+				"dweb:/ipfs/QmaPhmn7YRdF9pvmbGUr2sg9mvWMkxpid4fZDb66hNdvGm"
+			]
+		}
+	},
+	"version": 1
+}

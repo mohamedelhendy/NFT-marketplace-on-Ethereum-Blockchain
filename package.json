@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "browserify": "^17.0.0",
+    "buffer": "^6.0.3",
+    "file-system": "^2.2.2",
+    "fs": "^0.0.1-security",
+    "fs-web": "^1.0.1",
+    "ganache-cli": "^6.1.8",
+    "ipfs-api": "^26.1.2",
+    "ipfs-core": "^0.13.0",
+    "ipfs-http-client": "^56.0.0",
+    "ipfs-mini": "^1.1.5",
+    "mocha": "^8.3.2",
+    "solc": "^0.5.17",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "type": "module",
+    "web3": "^1.7.0"
+  }
+}
